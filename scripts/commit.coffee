@@ -4,10 +4,13 @@
 # http://memo.sanographix.net/post/88371442780
 
 module.exports = (robot) ->
-  robot.hear /makibot/, (msg) ->
+  robot.hear /今日の運勢$/i, (msg) ->
     msg.send msg.random [
-        "それろ〜〜〜それろ〜〜〜",
-        "ワイワイワイ",
-        "やんやんっ♡♡",
-        "ないやん"        
+        "ウルトラハッピー",
+        "大吉",
+        "中吉",
+        "小吉",
+        "末吉",
+        "凶",
+        "大凶"
     ]
