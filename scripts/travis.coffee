@@ -34,6 +34,7 @@ module.exports = (robot) ->
             msg.send "http://img.theinterviews.jp/photos/61/L_c0832c493319c3a2c72f8329cc5285a3.jpg"
         else
             msg.send "Build status for #{project}: Unknown"
+
     robot.router.post "/hubot/travis", (req, res) ->
         query = querystring.parse url.parse(req.url).query
         user = {}

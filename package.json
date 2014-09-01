@@ -29,5 +29,9 @@
   "engines": {
     "node": ">= 0.8.x",
     "npm": ">= 1.1.x"
+  },
+  "devDependencies": {
+    "url": "~0.10.1",
+    "res": "~0.2.0"
   }
 }
