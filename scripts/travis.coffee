@@ -28,11 +28,12 @@ module.exports = (robot) ->
         response = JSON.parse(body)
         if response.last_build_status == 0
             msg.send "Build status for #{project}: Passing"
+            msg.send "http://dic.nicovideo.jp/oekaki/652847.png"
         else if response.last_build_status == 1
             msg.send "Build status for #{project}: Failing"
+            msg.send "http://img.theinterviews.jp/photos/61/L_c0832c493319c3a2c72f8329cc5285a3.jpg"
         else
             msg.send "Build status for #{project}: Unknown"
-
     robot.router.post "/hubot/travis", (req, res) ->
         query = querystring.parse url.parse(req.url).query
         user = {}
